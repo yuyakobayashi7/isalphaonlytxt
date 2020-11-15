@@ -16,7 +16,10 @@ int main(void) {
     /* ファイルの終端まで文字を読み取り表示する */
     while (( ch = fgetc(fp)) != EOF ) {
        if(isalpha(ch)!=0){
-		putchar(ch);
+		printf("%c",ch);
+	}
+	else if(ch == '\n'){
+		printf(" \n");
 	}
 	else	printf(" ");
     }
